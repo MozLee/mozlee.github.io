@@ -50,3 +50,4 @@ $(document).ready(function () {
 
   $(document).trigger('bootstrap:after');
 });
+console.log("Welcome to MozLee's Blog")
