@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="MozLee的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="MozLee&#39;s Blog">
-<meta property="og:url" content="http://mozlee.com/index.html">
+<meta name="description" content="声明变量可以使用let、const关键字声明变量，而不推荐使用var声明变量 var声明变量的问题:  可以多次重复声明同一个变量名，存在覆盖的风险 在全局声明的变量会挂在全局对象上 var不能形成块级作用域，例如：if、for范围外依然可以使用var声明的变量 var声明的变量具备变量提升（hoisting）特性— 允许使用在前，声明在后  var存在很多问题，let横空出世。let允许创建块级">
+<meta property="og:type" content="article">
+<meta property="og:title" content="常用ECMAScript6语法归纳">
+<meta property="og:url" content="http://mozlee.com/2018/03/15/常用ECMAScript6语法归纳/index.html">
 <meta property="og:site_name" content="MozLee&#39;s Blog">
-<meta property="og:description" content="MozLee的博客">
+<meta property="og:description" content="声明变量可以使用let、const关键字声明变量，而不推荐使用var声明变量 var声明变量的问题:  可以多次重复声明同一个变量名，存在覆盖的风险 在全局声明的变量会挂在全局对象上 var不能形成块级作用域，例如：if、for范围外依然可以使用var声明的变量 var声明的变量具备变量提升（hoisting）特性— 允许使用在前，声明在后  var存在很多问题，let横空出世。let允许创建块级">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-03-15T09:44:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="MozLee&#39;s Blog">
-<meta name="twitter:description" content="MozLee的博客">
+<meta name="twitter:title" content="常用ECMAScript6语法归纳">
+<meta name="twitter:description" content="声明变量可以使用let、const关键字声明变量，而不推荐使用var声明变量 var声明变量的问题:  可以多次重复声明同一个变量名，存在覆盖的风险 在全局声明的变量会挂在全局对象上 var不能形成块级作用域，例如：if、for范围外依然可以使用var声明的变量 var声明的变量具备变量提升（hoisting）特性— 允许使用在前，声明在后  var存在很多问题，let横空出世。let允许创建块级">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://mozlee.com/"/>
+  <link rel="canonical" href="http://mozlee.com/2018/03/15/常用ECMAScript6语法归纳/"/>
 
 
 
 
 
-  <title>MozLee's Blog</title>
+  <title>常用ECMAScript6语法归纳 | MozLee's Blog</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,9 +265,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -297,9 +297,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/03/15/常用ECMAScript6语法归纳/" itemprop="url">常用ECMAScript6语法归纳</a></h1>
+          <h1 class="post-title" itemprop="name headline">常用ECMAScript6语法归纳</h1>
         
 
         <div class="post-meta">
@@ -371,9 +369,7 @@
       
 
       
-        
-          
-            <h2 id="声明变量"><a href="#声明变量" class="headerlink" title="声明变量"></a>声明变量</h2><p>可以使用<strong>let</strong>、<strong>const</strong>关键字声明变量，而不推荐使用<strong>var</strong>声明变量</p>
+        <h2 id="声明变量"><a href="#声明变量" class="headerlink" title="声明变量"></a>声明变量</h2><p>可以使用<strong>let</strong>、<strong>const</strong>关键字声明变量，而不推荐使用<strong>var</strong>声明变量</p>
 <p><strong>var</strong>声明变量的问题:</p>
 <ul>
 <li>可以多次重复声明同一个变量名，存在覆盖的风险</li>
@@ -448,8 +444,6 @@
 <p>定义函数可省略function关键字<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var o = &#123;</span><br><span class="line">    fn()&#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>相当于：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var o = &#123;</span><br><span class="line">    fn: function () &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
-          
-        
       
     </div>
     
@@ -466,162 +460,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://mozlee.com/2018/02/27/Mac下VSCode插件Color-Picker安装失败解决方案/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MozLee">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/29689134.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MozLee's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/27/Mac下VSCode插件Color-Picker安装失败解决方案/" itemprop="url">Mac下VSCode插件Color Picker安装失败解决方案</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T15:00:00+08:00">
-                2018-02-27
-              </time>
+              <a href="/2018/02/27/Mac下VSCode插件Color-Picker安装失败解决方案/" rel="next" title="Mac下VSCode插件Color Picker安装失败解决方案">
+                <i class="fa fa-chevron-left"></i> Mac下VSCode插件Color Picker安装失败解决方案
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/VSCode/" itemprop="url" rel="index">
-                    <span itemprop="name">VSCode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="Mac下VSCode插件Color-Picker安装失败解决方案"><a href="#Mac下VSCode插件Color-Picker安装失败解决方案" class="headerlink" title="Mac下VSCode插件Color Picker安装失败解决方案"></a>Mac下VSCode插件Color Picker安装失败解决方案</h1><hr>
-<h1 id="PS-先记录一下，有时间写详细的。"><a href="#PS-先记录一下，有时间写详细的。" class="headerlink" title="PS 先记录一下，有时间写详细的。"></a>PS 先记录一下，有时间写详细的。</h1><h2 id="vscode扩展商店安装Color-Picker插件"><a href="#vscode扩展商店安装Color-Picker插件" class="headerlink" title="vscode扩展商店安装Color Picker插件"></a>vscode扩展商店安装Color Picker插件</h2><blockquote>
-<p>切记安装后不要在vscode控制台调用 pick color命令</p>
-</blockquote>
-<h2 id="打开mac终端使用cnpm方式安装"><a href="#打开mac终端使用cnpm方式安装" class="headerlink" title="打开mac终端使用cnpm方式安装"></a>打开mac终端使用cnpm方式安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd ~/.vscode/extensions/anseki.vscode-color-x.x.x</span><br></pre></td></tr></table></figure>
-<p>x.x.x 是版本号</p>
-<p>进入文件夹后执行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cnpm intall</span><br></pre></td></tr></table></figure>
-<p><img src="http://mozlee.com/uploads/DFE28761-4A7E-476C-A235-D39B1F0A66AA.png" alt="此处输入图片的描述"><br><img src="http://mozlee.com/uploads/D839393F-E637-4E6F-A3CE-D7AA46C9F6C4.png" alt="此处输入图片的描述"><br>大功告成~</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -631,187 +491,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://mozlee.com/2018/02/26/Git&Github/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="MozLee">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/29689134.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="MozLee's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/26/Git&Github/" itemprop="url">Git&Github</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-26T21:00:43+08:00">
-                2018-02-26
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="git-amp-github"><a href="#git-amp-github" class="headerlink" title="git&amp;github"></a>git&amp;github</h2><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><ul>
-<li>工具</li>
-<li>Git是一款免费、开源的分布式版本控制系统</li>
-</ul>
-<h3 id="分区："><a href="#分区：" class="headerlink" title="分区："></a>分区：</h3><ul>
-<li>工作区：写代码的目录</li>
-<li>缓存区：在工作区和版本库之间做一个缓存</li>
-<li>版本库：最终成型的版本</li>
-</ul>
-<h3 id="命令："><a href="#命令：" class="headerlink" title="命令："></a>命令：</h3><ul>
-<li><p>初始化目录，把一个目录变成git可以管理的工作区</p>
-<blockquote>
-<p>git init<br>敲这个命令后，会在这个目录下创建一个文件夹 <strong>.git</strong></p>
-</blockquote>
-</li>
-<li><p>添加到缓存区</p>
-<blockquote>
-<p>git add &lt;. 某个文件&gt;</p>
-</blockquote>
-</li>
-<li><p>添加到版本库</p>
-<blockquote>
-<p>git commit -m ‘这是日志信息’<br>-m(message) 日志信息</p>
-</blockquote>
-</li>
-</ul>
-<h2 id="github-gayhub"><a href="#github-gayhub" class="headerlink" title="github gayhub"></a>github gayhub</h2><ul>
-<li>用来托管代码的</li>
-</ul>
-<p>问题：怎么使用git这个工具把本地代码库中的代码上传到github上托管？</p>
-<ul>
-<li>git连接github</li>
-</ul>
-<ol>
-<li><p>设置git的user和email</p>
-<blockquote>
-<p>git config –global user.name “你的github名字”<br>git config –global user.email “你的github邮箱”</p>
-</blockquote>
-</li>
-<li><p>生成ssh秘钥</p>
-<blockquote>
-<p>ssh-keygen -t rsa -C “<a href="mailto:your_email@youremail.com" target="_blank" rel="noopener">your_email@youremail.com</a>“<br>回车后在提示的路径下找到.ssh文件夹，在这个文件夹下会有两个文件：</p>
-<ul>
-<li>id_rsa  私钥</li>
-<li>id_rsa.pub 公钥  未来给github用</li>
-</ul>
-</blockquote>
-</li>
-<li><p>设置github的ssh具体参考截图</p>
-</li>
-<li><p>测试是否连接上github</p>
-<blockquote>
-<p>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a><br>出现：Hi 你的用户名! You’ve successfully authenticated, but GitHub does not provide shell access.<br>说明连接成功</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="把本地的代码上传的github仓库"><a href="#把本地的代码上传的github仓库" class="headerlink" title="把本地的代码上传的github仓库"></a>把本地的代码上传的github仓库</h2><p>第一次：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m &apos;信息&apos;</span><br><span class="line">连接远程仓库：git remote add origin 远程仓库地址</span><br><span class="line">推送：git push -u origin master</span><br></pre></td></tr></table></figure></p>
-<p>以后：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &apos;信息&apos;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -819,6 +503,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDM5My8xMDkzMA=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -839,8 +532,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -911,6 +613,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#声明变量"><span class="nav-number">1.</span> <span class="nav-text">声明变量</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解构赋值"><span class="nav-number">2.</span> <span class="nav-text">解构赋值</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数组的结构赋值"><span class="nav-number">2.1.</span> <span class="nav-text">数组的结构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#对象的解构赋值"><span class="nav-number">2.2.</span> <span class="nav-text">对象的解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数参数的解构赋值"><span class="nav-number">2.3.</span> <span class="nav-text">函数参数的解构赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#默认值"><span class="nav-number">2.4.</span> <span class="nav-text">默认值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#模板字符串"><span class="nav-number">2.5.</span> <span class="nav-text">模板字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#箭头函数中this指向"><span class="nav-number">2.6.</span> <span class="nav-text">箭头函数中this指向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数参数默认值"><span class="nav-number">2.7.</span> <span class="nav-text">函数参数默认值</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对象的简洁表示法"><span class="nav-number">3.</span> <span class="nav-text">对象的简洁表示法</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1060,6 +778,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1088,6 +810,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 
