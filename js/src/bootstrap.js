@@ -50,4 +50,6 @@ $(document).ready(function () {
 
   $(document).trigger('bootstrap:after');
 });
-console.log("Welcome to MozLee's Blog\n菩提本无树，明镜亦非台 \n我的微博ID是 瞅啥那");
+console.log("Welcome to MozLee's Blog\n%c菩提本无树，明镜亦非台\n我的微博ID是 瞅啥那",'background:#aaa;color:#bada55');
+
+
