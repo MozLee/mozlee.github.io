@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="#Debian9安装最新版Nodejs和NPMNode.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debi">
+<meta name="description" content="Debian9安装最新版Nodejs和NPMNode.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debia">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Debian9安装最新版Nodejs和NPM">
 <meta property="og:url" content="http://mozlee.com/2018/04/13/Debian9安装最新版Nodejs和NPM/index.html">
 <meta property="og:site_name" content="MozLee&#39;s Blog">
-<meta property="og:description" content="#Debian9安装最新版Nodejs和NPMNode.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debi">
+<meta property="og:description" content="Debian9安装最新版Nodejs和NPMNode.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debia">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-13T10:12:13.000Z">
+<meta property="og:updated_time" content="2018-04-13T10:14:53.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Debian9安装最新版Nodejs和NPM">
-<meta name="twitter:description" content="#Debian9安装最新版Nodejs和NPMNode.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debi">
+<meta name="twitter:description" content="Debian9安装最新版Nodejs和NPMNode.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debia">
 
 
 
@@ -380,12 +380,12 @@
       
 
       
-        <p>#Debian9安装最新版Nodejs和NPM<br>Node.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debian 9/8/7系统上安装最新的Nodejs和NPM。</p>
-<p>##一、添加Node.js PPA<br>首先，您需要在我们的系统中由Nodejs官方网站提供node.js PPA。如果尚未安装，我们还需要安装python-software-properties软件包。您可以选择安装最新的Node.js版本或LTS版本。</p>
+        <h1 id="Debian9安装最新版Nodejs和NPM"><a href="#Debian9安装最新版Nodejs和NPM" class="headerlink" title="Debian9安装最新版Nodejs和NPM"></a>Debian9安装最新版Nodejs和NPM</h1><p>Node.js是一个基于Chrome V8 JavaScript引擎构建的平台.Nodejs可用于轻松构建快速，可扩展的网络应用程序。最新版本node.js ppa由其官方网站维护。我们可以将这个PPA添加到Debian 9（Stretch） Debian 8（Jessie）和Debian 7（Wheezy）系统中。这篇我抄来的文章可以帮助你在Debian 9/8/7系统上安装最新的Nodejs和NPM。</p>
+<h2 id="一、添加Node-js-PPA"><a href="#一、添加Node-js-PPA" class="headerlink" title="一、添加Node.js PPA"></a>一、添加Node.js PPA</h2><p>首先，您需要在我们的系统中由Nodejs官方网站提供node.js PPA。如果尚未安装，我们还需要安装python-software-properties软件包。您可以选择安装最新的Node.js版本或LTS版本。</p>
 <p>最新版安装命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -</span><br></pre></td></tr></table></figure></p>
 <p>安装LTS长期维护版：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt-get install curl python-software-properties</span><br><span class="line">curl -sL https://deb.nodesource.com/setup_8.x |  bash -</span><br></pre></td></tr></table></figure></p>
-<p>##二、安装Node.js和NPM<br>添加所需的PPA文件后，可以安装Nodejs包。NPM也将与node.js一起安装。该命令还会在您的系统上安装许多其他相关软件包。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nodejs</span><br></pre></td></tr></table></figure></p>
-<p>##三、检查Node.js和NPM版本<br>安装node.js后，验证并检查安装的版本。你可以在node.js 官方网站上找到关于当前版本的更多细节。<br><strong>检查Node.js版本</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
+<h2 id="二、安装Node-js和NPM"><a href="#二、安装Node-js和NPM" class="headerlink" title="二、安装Node.js和NPM"></a>二、安装Node.js和NPM</h2><p>添加所需的PPA文件后，可以安装Nodejs包。NPM也将与node.js一起安装。该命令还会在您的系统上安装许多其他相关软件包。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install nodejs</span><br></pre></td></tr></table></figure></p>
+<h2 id="三、检查Node-js和NPM版本"><a href="#三、检查Node-js和NPM版本" class="headerlink" title="三、检查Node.js和NPM版本"></a>三、检查Node.js和NPM版本</h2><p>安装node.js后，验证并检查安装的版本。你可以在node.js 官方网站上找到关于当前版本的更多细节。<br><strong>检查Node.js版本</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></p>
 <p><strong>检查npm版本</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></p>
 
       
@@ -476,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -548,6 +557,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Debian9安装最新版Nodejs和NPM"><span class="nav-number">1.</span> <span class="nav-text">Debian9安装最新版Nodejs和NPM</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、添加Node-js-PPA"><span class="nav-number">1.1.</span> <span class="nav-text">一、添加Node.js PPA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、安装Node-js和NPM"><span class="nav-number">1.2.</span> <span class="nav-text">二、安装Node.js和NPM</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、检查Node-js和NPM版本"><span class="nav-number">1.3.</span> <span class="nav-text">三、检查Node.js和NPM版本</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
